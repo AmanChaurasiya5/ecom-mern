@@ -24,7 +24,7 @@ Deployment: Vercel
 
 📦 Order management system
 
-💳 Payment integration with Stripe
+💳 Payment integration with Stripe and Razorpay
 
 🚚 Cash on Delivery option
 
@@ -32,6 +32,45 @@ Deployment: Vercel
 
 🧑‍💼 Role-based access (User and Admin panels)
 
-📁 Project Structure
-The project is organized into separate folders for the frontend (user and admin) and backend to maintain modularity and clarity.
+📦 Key Dependencies
+Backend
+Express – Web server framework
 
+MongoDB & Mongoose – NoSQL database and object modeling
+
+JWT – Secure authentication with tokens
+
+Bcrypt – Password hashing
+
+Stripe – Payment gateway integration
+
+Cloudinary & Multer – Media upload and storage
+
+Validator – Data sanitization and validation
+
+Dotenv – Environment variable management
+
+User Frontend
+React – UI rendering
+
+React Router DOM – Client-side routing
+
+Axios – API requests
+
+Tailwind CSS – Utility-first CSS framework
+
+React Toastify – Toast notifications
+
+Admin Panel
+Same as the user frontend, plus:
+
+JWT – For role-based access handling on the client
+
+📁 Project Structure
+The project is modular, with separate directories for:
+
+/backend – REST API and business logic
+
+/frontend – User-facing UI
+
+/admin – Admin dashboard for product and order management
